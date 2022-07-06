@@ -15,6 +15,12 @@ Vue.prototype.$http = axios // 每一个Vue 组件可以直接通过 $http 发�
 // 配置请求的根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 
+// 通过 axios 请求拦截器添加 token，保证拥有获取数据的权限。
+axios.interceptors.request.use((config) => {
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  // 在最后必须 return config
+  return config
+})
 
 Vue.config.productionTip = false
 

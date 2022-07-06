@@ -10,27 +10,14 @@
 			<!-- 数据绑定：(1) :model属性绑定，值是对象,在data在做定义
       (2) 在 每个表单项绑定数据的某个属性 -->
 			<!-- 通过 ref 标注 DOM 元素 -->
-			<el-form
-				:model="loginForm"
-				:rules="loginFormRules"
-				ref="loginFormRef"
-				label-width="0px"
-				class="login_form"
-			>
+			<el-form :model="loginForm" :rules="loginFormRules" ref="loginFormRef" label-width="0px" class="login_form">
 				<!-- 用户名 -->
 				<el-form-item prop="username">
-					<el-input
-						v-model="loginForm.username"
-						prefix-icon="iconfont icon-user"
-					></el-input>
+					<el-input v-model="loginForm.username" prefix-icon="iconfont icon-user"></el-input>
 				</el-form-item>
 				<!-- 密码 -->
 				<el-form-item prop="password">
-					<el-input
-						v-model="loginForm.password"
-						prefix-icon="iconfont icon-3702mima"
-						type="password"
-					></el-input>
+					<el-input v-model="loginForm.password" prefix-icon="iconfont icon-3702mima" type="password"></el-input>
 				</el-form-item>
 				<!-- 按钮区域 -->
 				<el-form-item class="btns">
