@@ -25,7 +25,10 @@ import {
   Tooltip,
   Pagination,
   Dialog,
-  MessageBox 
+  MessageBox,
+  Tag,
+  Tree,
+  Select
 } from 'element-ui'
 
 Vue.use(Form)
@@ -51,6 +54,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+
 
 // 挂载到Vue 原型对象
 Vue.prototype.$message = Message // 在组件中可通过this 访问 $message 进行弹窗提示
