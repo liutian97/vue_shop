@@ -28,7 +28,8 @@ import {
   MessageBox,
   Tag,
   Tree,
-  Select
+  Select,
+  Cascader,
 } from 'element-ui'
 
 Vue.use(Form)
@@ -57,6 +58,7 @@ Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
+Vue.use(Cascader)
 
 
 // 挂载到Vue 原型对象

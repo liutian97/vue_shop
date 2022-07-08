@@ -24,3 +24,9 @@ html, body, #app {
 .el-pagination {
   margin-top: 15px;
 }
+
+/* 级联菜单的高度 */
+/* 不设置级联菜单的最后一级看不到 */
+.el-cascader-menu {
+  height: 200px;
+}

@@ -7,6 +7,8 @@ import './plugins/element.js'
 import './assets/css/global.css'
 // 导入字体图标
 import './assets/fonts/iconfont.css'
+// 导入 vue-table-with-tree-grid 依赖
+import TreeTable from 'vue-table-with-tree-grid'
 
 // 配置 axios 发起登录请求
 // 导入 axios 包，并挂载在 Vue 的实例原型对象上
@@ -23,6 +25,8 @@ axios.interceptors.request.use((config) => {
 })
 
 Vue.config.productionTip = false
+// 全局注册组件
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,

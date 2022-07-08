@@ -7,6 +7,8 @@ import Welcome from './components/Welcome.vue' // 导入欢迎组件
 import Users from './components/user/Users.vue' // 导入用户列表组件
 import Rights from './components/power/Rights.vue' // 导入权限列表组件
 import Roles from './components/power/Roles.vue' // 导入角色列表组件
+import Cate from './components/goods/Cate.vue' // 导入商品分类组件
+
 Vue.use(Router)
 
 const router = new Router({
@@ -24,7 +26,8 @@ const router = new Router({
         { path: '/welcome', component: Welcome },
         { path: '/users', component: Users },
         { path: '/rights', component: Rights },
-        { path: '/roles', component: Roles }
+        { path: '/roles', component: Roles },
+        { path: '/categories', component: Cate }
       ]
     }
   ]
