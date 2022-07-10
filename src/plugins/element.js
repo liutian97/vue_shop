@@ -30,6 +30,9 @@ import {
   Tree,
   Select,
   Cascader,
+  Alert,
+  Tabs,
+  TabPane
 } from 'element-ui'
 
 Vue.use(Form)
@@ -59,6 +62,12 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
+
+
+
 
 
 // 挂载到Vue 原型对象
