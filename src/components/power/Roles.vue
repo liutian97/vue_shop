@@ -47,9 +47,9 @@
 								</el-row>
 							</el-col>
 						</el-row>
-						<pre>
+						<!-- <pre>
               {{scope.row}}
-            </pre>
+            </pre> -->
 					</template>
 				</el-table-column>
 				<!-- 索引列 -->

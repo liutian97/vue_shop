@@ -25,8 +25,21 @@ html, body, #app {
   margin-top: 15px;
 }
 
+.el-steps {
+  margin: 15px 0;
+}
+
+.el-step__title {
+  font-size: 13px;
+}
+
 /* 级联菜单的高度 */
 /* 不设置级联菜单的最后一级看不到 */
 .el-cascader-menu {
   height: 200px;
+}
+
+/* 富文本编辑器样式 */
+.ql-editor {
+  min-height: 300px;
 }
