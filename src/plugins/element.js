@@ -37,7 +37,9 @@ import {
   Steps,
   CheckboxGroup,
   Checkbox,
-  Upload
+  Upload,
+  Timeline,
+  TimelineItem
 } from 'element-ui'
 
 Vue.use(Form)
@@ -75,6 +77,8 @@ Vue.use(Steps)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 // 挂载到Vue 原型对象
 Vue.prototype.$message = Message // 在组件中可通过this 访问 $message 进行弹窗提示
